@@ -1,0 +1,159 @@
+bash:
+  extension: [bash]
+  command: "bash {{{path}}}"
+zsh:
+  extension: [zsh]
+  command: "zsh {{{path}}}"
+fish:
+  extension: [fish]
+  command: "fish {{{path}}}"
+xonsh:
+  extension: [xsh, xonsh]
+  command: "xonsh {{{path}}}"
+man:
+  extension: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  command: "man {{{path}}}"
+javascript:
+  extension: [js, cjs, mjs]
+  command: "node {{{path}}}"
+java:
+  extension: [java, class]
+  command: "javac {{{path}}}"
+  execute: "java {{{output}}}"
+jar:
+  extension: [jar]
+  command: "java -jar {{{path}}}"
+c:
+  extension: [c, h]
+  command: "gcc {{{path}}} -o {{{output}}}"
+cpp:
+  extension: [cc, C, cpp, cxx, c++, hh, H, hpp, hxx, h++]
+  command: "g++ {{{path}}} -o {{{output}}}"
+objective-c:
+  extension: [m, mm, M]
+  command: "gcc -framework Cocoa {{{path}}} -o {{{output}}}"
+php:
+  extension: [php, phtml, php3, php4, php5, php7, phps, php_s, pht, phar]
+  command: "php {{{path}}}"
+python:
+  extension: [py, pyi, pyc, pyd, pyo, pyw, pyz]
+  command: "python -u {{{path}}}"
+perl:
+  extension: [perl, plx, pl, pm, xs, t, pod]
+  command: "perl {{{path}}}"
+perl6:
+  extension: [p6, pm6, pod6, t6, raku, rakumod, rakudoc, rakutest]
+  command: "perl6 {{{path}}}"
+ruby:
+  extension: [rb]
+  command: "ruby {{{path}}}"
+go:
+  extension: [go, gccgo]
+  command: "go build {{{path}}} -o {{{output}}}"
+lua:
+  extension: [lua]
+  command: "lua {{{path}}}"
+groovy:
+  extension: [groovy, gvy, gy, gsh]
+  command: "groovy {{{path}}}"
+powershell:
+  extension: [ps1, ps1xml, psc1, psd1, psm1, pssc, psrc, cdxml]
+  command: "powershell -ExecutionPolicy ByPass -File {{{path}}}"
+bat:
+  extension: [cmd, bat, btm]
+  command: "cmd /c {{{path}}}"
+fsharp: #TODO
+  extension: [fsi, fs, fsx, fsscript]
+  command: "fsi {{{path}}}"
+csharp: #TODO
+  extension: [cs, csx]
+  command: "scriptcs {{{path}}}"
+vbscript:
+  extension: [vbs, vbe, wsf, wsc]
+  command: "cscript //Nologo {{{path}}}"
+typescript:
+  extension: [ts, tsx]
+  command: "ts-node {{{path}}}"
+coffeescript:
+  extension: [coffee, litcoffee]
+  command: "coffee {{{path}}}"
+scala: #TODO
+  extension: [scala, sc]
+  command: "scala {{{path}}}"
+swift:
+  extension: [swift]
+  command: "swift {{{path}}}"
+julia:
+  extension: [jl]
+  command: "julia {{{path}}}"
+crystal:
+  extension: [cr]
+  command: "crystal build {{{path}}}"
+ocaml:
+  extension: [ml, mli]
+  command: "ocaml {{{path}}}"
+r:
+  extension: [r, rdata, rds, rda]
+  command: "Rscript {{{path}}}"
+applescript:
+  extension: [scpt, scptd, applescript]
+  command: "osascript {{{path}}}"
+clojure: #TODO
+  extension: [clj, cljs, cljc, edn]
+  command: "lein exec {{{path}}}"
+haxe: #TODO
+  extension: [hx, hxml]
+  command: "haxe --cwd {{{dir}}} --run {{{name}}}"
+rust:
+  extension: [rs, rlib]
+  command: "rustc {{{path}}} -o {{{output}}}"
+racket:
+  extension: [rkt]
+  command: "racket {{{path}}}"
+scheme: #TODO
+  extension: [scm, ss]
+  command: "csi -script {{{path}}}"
+ahk:
+  extension: [ahk]
+  command: "autohotkey {{{path}}}"
+autoit:
+  extension: [au3]
+  command: "autoit3 {{{path}}}"
+dart:
+  extension: [dart]
+  command: "dart {{{path}}}"
+pascal:
+  extension: [pp, pas, inc]
+  command: "fpc {{{path}}}"
+  execute: "{{{output}}}"
+d:
+  extension: [d]
+  command: "dmd {{{path}}}"
+  execute: "{{{output}}}"
+haskell:
+  extension: [hs, lhs]
+  command: "ghc {{{path}}} -o {{{output}}}"
+nim:
+  extension: [nim, nims, nimbls]
+  command: "nim compile --verbosity:0 --hints:off {{{path}}}"
+lisp:
+  extension: [lisp]
+  command: "sbcl --script {{{path}}}"
+kit: #TODO
+  extension: [kit]
+  command: "kitc --run {{{path}}}"
+v:
+  extension: [v]
+  command: "v {{{path}}} -o {{{output}}}"
+sass:
+  extension: [sass]
+  command: "sass --style expanded {{{path}}}"
+scss:
+  extension: [scss]
+  command: "scss --style expanded {{{path}}}"
+less: #TODO
+  extension: [less]
+  command: "lessc {{{path}}} {{{name}}}.css"
+fortran:
+  extension: [f, for, f90]
+  command: "gfortran {{{path}}} -o {{{output}}}"
