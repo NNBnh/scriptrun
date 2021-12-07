@@ -147,11 +147,11 @@ v:
   command: "v {{{path}}} -o {{{output}}}"
 sass:
   extension: [sass]
-  command: "sass --style expanded {{{path}}}"
+  command: "sass --style expanded {{{name}}}"
 scss:
   extension: [scss]
-  command: "scss --style expanded {{{path}}}"
-less: #TODO
+  command: "scss --style expanded {{{name}}}"
+less:
   extension: [less]
   command: "lessc {{{path}}} {{{name}}}.css"
 fortran:
